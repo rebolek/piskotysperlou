@@ -95,3 +95,63 @@ if (piskotClicker && clickHint) {
 }
 
 document.querySelector(".newsletter-form")?.addEventListener("submit", handleNewsletter);
+
+const adBanner = document.querySelector(".ad-banner-track");
+const adSlides = document.querySelectorAll(".ad-slide");
+const adDots = document.querySelectorAll(".ad-dot");
+let adIndex = 0;
+let adTimer = null;
+
+function showSlide(index) {
+    adSlides.forEach((s, i) => s.classList.toggle("active", i === index));
+    adDots.forEach((d, i) => {
+        d.classList.toggle("active", i === index);
+        d.setAttribute("aria-selected", String(i === index));
+    });
+    adIndex = index;
+}
+
+function nextSlide() {
+    showSlide((adIndex + 1) % adSlides.length);
+}
+
+function startBanner() {
+    stopBanner();
+    adTimer = setInterval(nextSlide, 6000);
+}
+
+function stopBanner() {
+    clearInterval(adTimer);
+}
+
+adDots.forEach((dot) => {
+    dot.addEventListener("click", () => {
+        showSlide(Number(dot.dataset.index));
+        startBanner();
+    });
+});
+
+if (adSlides.length) {
+    startBanner();
+    adBanner.addEventListener("mouseenter", stopBanner);
+    adBanner.addEventListener("mouseleave", startBanner);
+}
+
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
+
+if (navToggle && navLinks) {
+    navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        navToggle.classList.toggle("active", isOpen);
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("open");
+            navToggle.classList.remove("active");
+            navToggle.setAttribute("aria-expanded", "false");
+        });
+    });
+}

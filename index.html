@@ -17,7 +17,12 @@
             <a href="#" class="logo">
                 🟡 piškoty<span>sPerlou</span>.cz
             </a>
-            <ul class="nav-links">
+            <button type="button" class="nav-toggle" id="navToggle" aria-label="Přepnout navigaci" aria-expanded="false" aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#pribeh">Příběh</a></li>
                 <li><a href="#vyhody">Výhody</a></li>
                 <li><a href="#konfigurator">Etiketa</a></li>
@@ -138,6 +143,20 @@
             </p>
         </div>
     </section>
+
+    <!-- AD BANNER -->
+    <div class="ad-banner" role="region" aria-label="Reklamní banner">
+        <div class="ad-banner-track">
+            <img src="img/metal.jpg" alt="Piškoty s Perlou – Metal edice" class="ad-slide active" loading="lazy">
+            <img src="img/chill.jpg" alt="Piškoty s Perlou – Chill edice" class="ad-slide" loading="lazy">
+            <img src="img/groovy.jpg" alt="Piškoty s Perlou – Groovy edice" class="ad-slide" loading="lazy">
+        </div>
+        <div class="ad-dots" role="tablist" aria-label="Přepnout banner">
+            <button type="button" class="ad-dot active" data-index="0" role="tab" aria-selected="true" aria-label="Metal edice"></button>
+            <button type="button" class="ad-dot" data-index="1" role="tab" aria-selected="false" aria-label="Chill edice"></button>
+            <button type="button" class="ad-dot" data-index="2" role="tab" aria-selected="false" aria-label="Groovy edice"></button>
+        </div>
+    </div>
 
     <!-- TESTIMONIALS -->
     <section>
