@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>piskotysperlou.cz | Návrat gastro-legendy 90. let</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                🟡 piškoty<span>sPerlou</span>.cz
+            </a>
+            <ul class="nav-links">
+                <li><a href="#pribeh">Příběh</a></li>
+                <li><a href="#vyhody">Výhody</a></li>
+                <li><a href="#konfigurator">Etiketa</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#konfigurator" class="btn">Vyzkoušet kombinaci</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <span class="hero-badge">Česká gastro-nostalgie 90. let</span>
+            <h1>Spojení, o které nikdo neprosil, ale všichni ho milují.</h1>
+            <p>Dětský piškot s chladivou vrstvou Perly z lednice. Rychlá sladko-slaná jednohubka přímo z krabičky, když ve spíži nic jiného nezbylo.</p>
+            <div class="hero-ctas">
+                <a href="#konfigurator" class="btn">Naučit se mazat</a>
+                <a href="#pribeh" class="btn btn-secondary">Proč to funguje?</a>
+            </div>
+        </div>
+        <div class="hero-visual" id="piskotClicker" title="Klikni 10x na piškot!">
+            <div class="piskot-graphic">
+                <div class="perla-layer"></div>
+            </div>
+            <div class="easter-egg-hint" id="clickHint">💡 Klikni 10x na piškot pro tajemství</div>
+        </div>
+    </section>
+
+    <!-- STORY & COMPARISON -->
+    <section id="pribeh">
+        <h2 class="section-title">Proč francouzské makronky, když máte toto?</h2>
+        <p class="section-subtitle">Srovnání dvou světů. Jedné předražené pařížské snobárny a jednoho ryzího českého kulinářského minimalismu.</p>
+
+        <div class="comparison-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parametr</th>
+                        <th>Piškoty s Perlou 🟡</th>
+                        <th>Francouzská Makronka 🥐</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Doba přípravy</strong></td>
+                        <td>2,4 sekundy</td>
+                        <td>3 hodiny (plus slzy a stud)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nutnost nádobí</strong></td>
+                        <td>Nulová (jí se nad krabičkou)</td>
+                        <td>Talířek, ubrousek, příbor</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chuťový profil</strong></td>
+                        <td>Křupavé umami se slaným dojezdem</td>
+                        <td>Jenom cukr</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nostalgický faktor</strong></td>
+                        <td>100 % (Prázdniny u babičky 1998)</td>
+                        <td>0 %</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="vyhody">
+        <h2 class="section-title">Proč je to geniální?</h2>
+        <p class="section-subtitle">Čtyři důvody, proč tento pokrm přežil generace bez jakéhokoliv marketingu.</p>
+
+        <div class="features-grid">
+            <div class="card">
+                <div class="card-icon">🧹</div>
+                <h3>Žádné nádobí</h3>
+                <p>Příprava probíhá přímo v plastové krabičce od Perly. Případné drobky bezpečně zachytí víčko.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Blesková rychlost</h3>
+                <p>Výroba jedné porce trvá kratší dobu než otevření dvířek od lednice. Ideální pro noční hlad.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏠</div>
+                <h3>100% Dostupnost</h3>
+                <p>I když se zdá lednice úplně prázdná, krabička Perly a poloprázdný sáček piškotů se tam najdou vždy.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚖️</div>
+                <h3>Umami Kontrast</h3>
+                <p>Sladká, suchá struktura dětského piškotu se dokonale propojí s chladnou slaností margarínu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONFIGURATOR -->
+    <section id="konfigurator">
+        <h2 class="section-title">Gastro-Etiketa & Konfigurátor</h2>
+        <p class="section-subtitle">Zvolte si svůj preferovaný styl konstrukce této pochoutky.</p>
+
+        <div class="configurator-box">
+            <div class="config-options">
+                <button type="button" class="config-btn active" data-config="single">1. Gastro-Začátečník (Single)</button>
+                <button type="button" class="config-btn" data-config="double">2. Klasik (Česká Makronka)</button>
+                <button type="button" class="config-btn" data-config="extreme">3. Extremist (Piškotová Věž)</button>
+            </div>
+
+            <div class="visual-display" id="visualDisplay">
+                <div class="perla-mini"></div>
+                <div class="piskot-mini"></div>
+            </div>
+
+            <h3 id="configTitle">Gastro-Začátečník</h3>
+            <p id="configDesc">
+                Jednoduchá vrstva Perly namazaná na rovnou stranu piškotu. Pro ty, kteří se ještě stydí sami před sebou.
+            </p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section>
+        <h2 class="section-title">Co říkají pamětníci</h2>
+        <p class="section-subtitle">Příběhy ze života, které napsala sama hladová realita.</p>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>„Předstíral jsem před přítelkyní, že jí nesu francouzské jednohubky. Byla to Perla na piškotu. Dnes jsme 10 let manželé.“</p>
+                <div class="testimonial-author">— Karel (34 let), Brno</div>
+            </div>
+            <div class="testimonial-card">
+                <p>„Vystudoval jsem kulinařinu v Paříži, ale když přijdu v 02:00 ráno z práce unavený, vyndám drak a Opavii. Nic se tomu nevyrovná.“</p>
+                <div class="testimonial-author">— Šéfkuchař Antonín</div>
+            </div>
+            <div class="testimonial-card">
+                <p>„Je to levný, je to rychlý a když to zapijete vlažným rozpustným kafem, je to prostě svátek.“</p>
+                <div class="testimonial-author">— Babička Květa</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <h2 class="section-title">Často kladené dotazy</h2>
+        <p class="section-subtitle">Vše, co jste se báli o této kombinaci zeptat.</p>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <button type="button" class="faq-question">
+                    Mohu použít poctivé máslo místo Perly?
+                    <span>➕</span>
+                </button>
+                <div class="faq-answer">
+                    Technicky ano, ale ztrácíte autentickou chuť 90. let a charakteristický lehce chladivý dojezd na patře. Perla je pro tento recept nenahraditelná.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question">
+                    Co když je Perla rozteklá při pokojové teplotě?
+                    <span>➕</span>
+                </button>
+                <div class="faq-answer">
+                    OKAMŽITĚ ZASTAVTE PŘÍPRAVU! Perla musí jít přímo z lednice. Rozteklý tuk způsobí promáčení piškotu a gastronomické neštěstí.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button type="button" class="faq-question">
+                    Mazat na rovnou, nebo vypouklou stranu piškotu?
+                    <span>➕</span>
+                </button>
+                <div class="faq-answer">
+                    Výhradně na rovnou (spodní) stranu! Vypouklá strana slouží jako ergonomická úchopová plocha pro palec a ukazováček.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>🟡 piškotySperlou.cz</h3>
+                <p class="footer-tagline">
+                    Neoficiální fanklub a oslava české gastronomické improvizace. Vytvořeno s láskou, nadsázkou a drobečky na gauči.
+                </p>
+            </div>
+            <div>
+                <h4>Chcete recepty na další gastro-hříchy?</h4>
+                <p class="newsletter-intro">Odebírejte náš občasník "50 odstínů margarínu".</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Váš e-mail..." aria-label="E-mail" required>
+                    <button type="submit" class="btn">Odebírat</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 piskotysperlou.cz — Všechna práva a drobky vyhrazeny.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
