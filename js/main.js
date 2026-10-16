@@ -63,6 +63,20 @@ const piskotClicker = document.getElementById("piskotClicker");
 const clickHint = document.getElementById("clickHint");
 let clickCount = 0;
 
+function saveRetroMode(isRetro) {
+    try {
+        localStorage.setItem("retro", isRetro ? "1" : "0");
+    } catch {
+        // storage blocked: retro mode just won't persist
+    }
+}
+
+try {
+    if (localStorage.getItem("retro") === "1") document.body.classList.add("retro-mode");
+} catch {
+    // storage blocked
+}
+
 function registerPiskotClick() {
     clickCount += 1;
     const remaining = 10 - clickCount;
@@ -72,6 +86,7 @@ function registerPiskotClick() {
     } else {
         document.body.classList.toggle("retro-mode");
         const isRetro = document.body.classList.contains("retro-mode");
+        saveRetroMode(isRetro);
         clickHint.textContent = isRetro ? "🎉 VÍTEJ V ROCE 1998! 🎉" : "Zpátky v přítomnosti.";
         clickCount = 0;
     }
@@ -86,6 +101,10 @@ if (piskotClicker && clickHint) {
         }
     });
 }
+
+/* FOOTER YEAR */
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 /* NEWSLETTER */
 document.querySelector(".newsletter-form")?.addEventListener("submit", (e) => {

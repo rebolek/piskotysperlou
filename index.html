@@ -15,9 +15,12 @@
     <meta property="og:title" content="Piškoty s Perlou | Návrat gastro-legendy 90. let">
     <meta property="og:description" content="Spojení, o které nikdo neprosil, ale všichni ho milují. Neoficiální fanklub české gastro-improvizace.">
     <meta property="og:url" content="https://piskotysperlou.cz/">
-    <meta property="og:image" content="https://piskotysperlou.cz/img/metal.webp">
+    <meta property="og:image" content="https://piskotysperlou.cz/img/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Piškoty s Perlou – Metal edice">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://piskotysperlou.cz/img/og.jpg">
 
     <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
@@ -62,19 +65,22 @@
     <header>
         <div class="nav-container">
             <a href="./" class="logo">
-                <span aria-hidden="true">🟡</span> piškoty<span>sPerlou</span>.cz
+                <span aria-hidden="true">🟡</span>
+                <span class="logo-text">piškoty<em>sPerlou</em>.cz</span>
             </a>
             <button type="button" class="nav-toggle" id="navToggle" aria-label="Přepnout navigaci" aria-expanded="false" aria-controls="navLinks">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#pribeh">Příběh</a></li>
-                <li><a href="#vyhody">Výhody</a></li>
-                <li><a href="#konfigurator">Etiketa</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
+            <nav aria-label="Hlavní navigace">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#pribeh">Příběh</a></li>
+                    <li><a href="#vyhody">Výhody</a></li>
+                    <li><a href="#konfigurator">Etiketa</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
             <a href="#konfigurator" class="btn nav-cta">Vyzkoušet kombinaci</a>
         </div>
     </header>
@@ -304,7 +310,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2026 piskotysperlou.cz — Všechna práva a drobky vyhrazeny.</p>
+            <p>&copy; <span id="year">2026</span> piskotysperlou.cz — Všechna práva a drobky vyhrazeny.</p>
             <p class="disclaimer">Neoficiální fanouškovský web, nijak nespojený s výrobcem. Perla, Opavia a další názvy jsou ochranné známky svých majitelů. Newsletter je zatím jen vtip, e-mailové adresy nikam neukládáme.</p>
         </div>
     </footer>

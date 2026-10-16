@@ -148,7 +148,8 @@ header::before {
     gap: 8px;
 }
 
-.logo span {
+.logo em {
+    font-style: normal;
     color: var(--accent);
 }
 
@@ -320,24 +321,34 @@ section {
     transform: scale(0.98);
 }
 
+/* side view: Perla sits on the flat (top) side, curved side faces down */
 .piskot-graphic {
-    width: 180px;
-    height: 180px;
-    background: var(--primary);
-    border-radius: 50%;
-    box-shadow: inset -10px -10px 20px var(--primary-hover), 0 10px 25px rgba(0,0,0,0.1);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 200px;
 }
 
 .perla-layer {
-    width: 110px;
-    height: 80px;
-    background: var(--border-color);
-    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-    box-shadow: inset 2px 2px 5px #ffffff, 0 4px 8px rgba(0,0,0,0.1);
-    border: 2px solid var(--perla-yellow);
+    order: -1;
+    width: 170px;
+    height: 34px;
+    background: var(--perla-yellow);
+    border-radius: 17px;
+    border: 3px solid var(--primary);
+    box-shadow: inset 2px 3px 5px #ffffff, 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: -6px;
+    position: relative;
+    z-index: 1;
+}
+
+.piskot-graphic::after {
+    content: "";
+    width: 200px;
+    height: 70px;
+    background: var(--primary);
+    border-radius: 0 0 100px 100px / 0 0 70px 70px;
+    box-shadow: inset -10px -10px 20px var(--primary-hover), 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .easter-egg-hint {
