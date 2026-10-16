@@ -110,7 +110,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 document.querySelector(".newsletter-form")?.addEventListener("submit", (e) => {
     e.preventDefault();
     document.getElementById("newsletterStatus").textContent =
-        "Děkujeme! Nyní jste oficiálně přihlášeni k odběru nostalgie. Běžte si dát piškot!";
+        "Děkujeme. První číslo vyjde, až dojde Perla.";
     e.target.reset();
 });
 

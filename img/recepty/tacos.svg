@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="800" height="520">
+    <rect width="400" height="260" rx="16" fill="#fef9c3"/>
+    <ellipse cx="200" cy="218" rx="172" ry="28" fill="#ffffff" stroke="#fde68a" stroke-width="3"/>
+    <!-- back taco -->
+    <g>
+        <path d="M206 154 Q218 126 238 138 Q256 118 274 136 Q294 120 310 138 Q324 132 330 154 Z" fill="#4ade80" stroke="#16a34a" stroke-width="2"/>
+        <path d="M204 156 Q220 140 240 148 Q262 134 282 146 Q304 136 330 156 Z" fill="#fde047" stroke="#d97706" stroke-width="2"/>
+        <g fill="#dc2626"><circle cx="236" cy="142" r="6"/><circle cx="270" cy="136" r="5"/><circle cx="304" cy="142" r="6"/></g>
+        <g fill="#facc15" stroke="#d97706" stroke-width="1"><circle cx="252" cy="146" r="3.5"/><circle cx="288" cy="144" r="3.5"/><circle cx="316" cy="150" r="3.5"/></g>
+        <path d="M204 156 A63 63 0 0 0 330 156 Z" fill="#f59e0b" stroke="#d97706" stroke-width="4" stroke-linejoin="round"/>
+        <g fill="#fde68a"><ellipse cx="240" cy="182" rx="6" ry="3" transform="rotate(25 240 182)"/><ellipse cx="270" cy="200" rx="6" ry="3"/><ellipse cx="300" cy="180" rx="6" ry="3" transform="rotate(-25 300 180)"/></g>
+    </g>
+    <!-- front taco -->
+    <g>
+        <path d="M76 164 Q88 134 110 146 Q128 124 148 142 Q168 126 184 144 Q200 138 204 164 Z" fill="#4ade80" stroke="#16a34a" stroke-width="2"/>
+        <path d="M74 166 Q92 148 114 156 Q136 142 156 154 Q180 144 204 166 Z" fill="#fde047" stroke="#d97706" stroke-width="2"/>
+        <g fill="#dc2626"><circle cx="106" cy="150" r="6"/><circle cx="142" cy="142" r="5"/><circle cx="178" cy="150" r="6"/></g>
+        <g fill="#facc15" stroke="#d97706" stroke-width="1"><circle cx="122" cy="154" r="3.5"/><circle cx="160" cy="150" r="3.5"/><circle cx="92" cy="160" r="3.5"/></g>
+        <path d="M72 166 A66 66 0 0 0 204 166 Z" fill="#f59e0b" stroke="#d97706" stroke-width="4" stroke-linejoin="round"/>
+        <g fill="#fde68a"><ellipse cx="110" cy="194" rx="6" ry="3" transform="rotate(25 110 194)"/><ellipse cx="140" cy="212" rx="6" ry="3"/><ellipse cx="172" cy="192" rx="6" ry="3" transform="rotate(-25 172 192)"/></g>
+    </g>
+    <!-- chilli pepper -->
+    <path d="M300 54 Q340 52 352 90 Q344 70 304 70 Q292 62 300 54 Z" fill="#dc2626"/>
+    <path d="M300 56 Q290 50 286 40" fill="none" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+    <!-- lime wedge -->
+    <path d="M60 80 A30 30 0 0 1 120 80 Z" fill="#a3e635" stroke="#4d7c0f" stroke-width="3"/>
+    <g stroke="#4d7c0f" stroke-width="2"><line x1="90" y1="80" x2="90" y2="56"/><line x1="90" y1="80" x2="72" y2="62"/><line x1="90" y1="80" x2="108" y2="62"/></g>
+</svg>
