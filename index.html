@@ -4,18 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>piskotysperlou.cz | Návrat gastro-legendy 90. let</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <meta name="description" content="Dětský piškot s chladivou vrstvou Perly z lednice. Neoficiální fanklub české gastro-nostalgie 90. let: příběh, konfigurátor a etiketa mazání.">
+    <meta name="theme-color" content="#f59e0b">
+    <link rel="canonical" href="https://piskotysperlou.cz/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🟡%3C/text%3E%3C/svg%3E">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="piskotysperlou.cz">
+    <meta property="og:title" content="Piškoty s Perlou | Návrat gastro-legendy 90. let">
+    <meta property="og:description" content="Spojení, o které nikdo neprosil, ale všichni ho milují. Neoficiální fanklub české gastro-improvizace.">
+    <meta property="og:url" content="https://piskotysperlou.cz/">
+    <meta property="og:image" content="https://piskotysperlou.cz/img/metal.webp">
+    <meta property="og:image:alt" content="Piškoty s Perlou – Metal edice">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Mohu použít poctivé máslo místo Perly?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Technicky ano, ale ztrácíte autentickou chuť 90. let a charakteristický lehce chladivý dojezd na patře. Perla je pro tento recept nenahraditelná."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Co když je Perla rozteklá při pokojové teplotě?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "OKAMŽITĚ ZASTAVTE PŘÍPRAVU! Perla musí jít přímo z lednice. Rozteklý tuk způsobí promáčení piškotu a gastronomické neštěstí."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Mazat na rovnou, nebo vypouklou stranu piškotu?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Výhradně na rovnou (spodní) stranu! Vypouklá strana slouží jako ergonomická úchopová plocha pro palec a ukazováček."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
 
     <!-- HEADER -->
     <header>
         <div class="nav-container">
-            <a href="#" class="logo">
-                🟡 piškoty<span>sPerlou</span>.cz
+            <a href="./" class="logo">
+                <span aria-hidden="true">🟡</span> piškoty<span>sPerlou</span>.cz
             </a>
             <button type="button" class="nav-toggle" id="navToggle" aria-label="Přepnout navigaci" aria-expanded="false" aria-controls="navLinks">
                 <span></span>
@@ -28,10 +75,11 @@
                 <li><a href="#konfigurator">Etiketa</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
-            <a href="#konfigurator" class="btn">Vyzkoušet kombinaci</a>
+            <a href="#konfigurator" class="btn nav-cta">Vyzkoušet kombinaci</a>
         </div>
     </header>
 
+    <main>
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-text">
@@ -43,11 +91,11 @@
                 <a href="#pribeh" class="btn btn-secondary">Proč to funguje?</a>
             </div>
         </div>
-        <div class="hero-visual" id="piskotClicker" title="Klikni 10x na piškot!">
-            <div class="piskot-graphic">
+        <div class="hero-visual" id="piskotClicker" role="button" tabindex="0" aria-describedby="clickHint" aria-label="Piškot s Perlou. Klikni 10x pro tajemství">
+            <div class="piskot-graphic" aria-hidden="true">
                 <div class="perla-layer"></div>
             </div>
-            <div class="easter-egg-hint" id="clickHint">💡 Klikni 10x na piškot pro tajemství</div>
+            <div class="easter-egg-hint" id="clickHint" aria-live="polite">💡 Klikni 10x na piškot pro tajemství</div>
         </div>
     </section>
 
@@ -60,29 +108,29 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Parametr</th>
-                        <th>Piškoty s Perlou 🟡</th>
-                        <th>Francouzská Makronka 🥐</th>
+                        <th scope="col">Parametr</th>
+                        <th scope="col">Piškoty s Perlou 🟡</th>
+                        <th scope="col">Francouzská Makronka 🥐</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Doba přípravy</strong></td>
+                        <th scope="row">Doba přípravy</th>
                         <td>2,4 sekundy</td>
                         <td>3 hodiny (plus slzy a stud)</td>
                     </tr>
                     <tr>
-                        <td><strong>Nutnost nádobí</strong></td>
+                        <th scope="row">Nutnost nádobí</th>
                         <td>Nulová (jí se nad krabičkou)</td>
                         <td>Talířek, ubrousek, příbor</td>
                     </tr>
                     <tr>
-                        <td><strong>Chuťový profil</strong></td>
+                        <th scope="row">Chuťový profil</th>
                         <td>Křupavé umami se slaným dojezdem</td>
                         <td>Jenom cukr</td>
                     </tr>
                     <tr>
-                        <td><strong>Nostalgický faktor</strong></td>
+                        <th scope="row">Nostalgický faktor</th>
                         <td>100 % (Prázdniny u babičky 1998)</td>
                         <td>0 %</td>
                     </tr>
@@ -98,22 +146,22 @@
 
         <div class="features-grid">
             <div class="card">
-                <div class="card-icon">🧹</div>
+                <div class="card-icon" aria-hidden="true">🧹</div>
                 <h3>Žádné nádobí</h3>
                 <p>Příprava probíhá přímo v plastové krabičce od Perly. Případné drobky bezpečně zachytí víčko.</p>
             </div>
             <div class="card">
-                <div class="card-icon">⚡</div>
+                <div class="card-icon" aria-hidden="true">⚡</div>
                 <h3>Blesková rychlost</h3>
                 <p>Výroba jedné porce trvá kratší dobu než otevření dvířek od lednice. Ideální pro noční hlad.</p>
             </div>
             <div class="card">
-                <div class="card-icon">🏠</div>
+                <div class="card-icon" aria-hidden="true">🏠</div>
                 <h3>100% Dostupnost</h3>
                 <p>I když se zdá lednice úplně prázdná, krabička Perly a poloprázdný sáček piškotů se tam najdou vždy.</p>
             </div>
             <div class="card">
-                <div class="card-icon">⚖️</div>
+                <div class="card-icon" aria-hidden="true">⚖️</div>
                 <h3>Umami Kontrast</h3>
                 <p>Sladká, suchá struktura dětského piškotu se dokonale propojí s chladnou slaností margarínu.</p>
             </div>
@@ -127,55 +175,75 @@
 
         <div class="configurator-box">
             <div class="config-options">
-                <button type="button" class="config-btn active" data-config="single">1. Gastro-Začátečník (Single)</button>
-                <button type="button" class="config-btn" data-config="double">2. Klasik (Česká Makronka)</button>
-                <button type="button" class="config-btn" data-config="extreme">3. Extremist (Piškotová Věž)</button>
+                <button type="button" class="config-btn active" aria-pressed="true" data-config="single"
+                    data-title="1. Gastro-Začátečník (Single)"
+                    data-desc="Jednoduchá vrstva Perly namazaná na rovnou stranu piškotu. Pro ty, kteří se ještě stydí sami před sebou."
+                    data-layers="perla piskot">1. Gastro-Začátečník (Single)</button>
+                <button type="button" class="config-btn" aria-pressed="false" data-config="double"
+                    data-title="2. Klasik (Česká Makronka)"
+                    data-desc="Sendvičová konstrukce: Piškot – Perla – Piškot. Tuk je bezpečně uzavřen uvnitř a nešpiní prsty. Vrchol elegance."
+                    data-layers="piskot perla piskot">2. Klasik (Česká Makronka)</button>
+                <button type="button" class="config-btn" aria-pressed="false" data-config="extreme"
+                    data-title="3. Extremist (Piškotová Věž)"
+                    data-desc="3x piškot, 2x hrubá vrstva Perly přímo z mrazáku. Určeno pro lidi po těžkém rozchodu nebo neudělané zkoušce na VŠ."
+                    data-layers="piskot perla piskot perla piskot">3. Extremist (Piškotová Věž)</button>
             </div>
 
-            <div class="visual-display" id="visualDisplay">
+            <div class="visual-display" id="visualDisplay" aria-hidden="true">
                 <div class="perla-mini"></div>
-                <div class="piskot-mini"></div>
+                <div class="piskot-mini flat-up"></div>
             </div>
 
-            <h3 id="configTitle">Gastro-Začátečník</h3>
-            <p id="configDesc">
-                Jednoduchá vrstva Perly namazaná na rovnou stranu piškotu. Pro ty, kteří se ještě stydí sami před sebou.
-            </p>
+            <div aria-live="polite">
+                <h3 id="configTitle">1. Gastro-Začátečník (Single)</h3>
+                <p id="configDesc">
+                    Jednoduchá vrstva Perly namazaná na rovnou stranu piškotu. Pro ty, kteří se ještě stydí sami před sebou.
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- AD BANNER -->
-    <div class="ad-banner" role="region" aria-label="Reklamní banner">
+    <div class="ad-banner" role="region" aria-roledescription="carousel" aria-label="Reklamní banner">
         <div class="ad-banner-track">
-            <img src="img/metal.jpg" alt="Piškoty s Perlou – Metal edice" class="ad-slide active" loading="lazy">
-            <img src="img/chill.jpg" alt="Piškoty s Perlou – Chill edice" class="ad-slide" loading="lazy">
-            <img src="img/groovy.jpg" alt="Piškoty s Perlou – Groovy edice" class="ad-slide" loading="lazy">
+            <img src="img/metal.webp" width="1280" height="1098" alt="Piškoty s Perlou – Metal edice" class="ad-slide active" loading="lazy">
+            <img src="img/chill.webp" width="1024" height="1280" alt="Piškoty s Perlou – Chill edice" class="ad-slide" loading="lazy" aria-hidden="true">
+            <img src="img/groovy.webp" width="1254" height="1254" alt="Piškoty s Perlou – Groovy edice" class="ad-slide" loading="lazy" aria-hidden="true">
         </div>
-        <div class="ad-dots" role="tablist" aria-label="Přepnout banner">
-            <button type="button" class="ad-dot active" data-index="0" role="tab" aria-selected="true" aria-label="Metal edice"></button>
-            <button type="button" class="ad-dot" data-index="1" role="tab" aria-selected="false" aria-label="Chill edice"></button>
-            <button type="button" class="ad-dot" data-index="2" role="tab" aria-selected="false" aria-label="Groovy edice"></button>
+        <div class="ad-controls">
+            <button type="button" class="ad-pause" id="adPause" aria-label="Pozastavit automatické přepínání" aria-pressed="false">⏸</button>
+            <div class="ad-dots">
+                <button type="button" class="ad-dot active" data-index="0" aria-current="true" aria-label="Metal edice"></button>
+                <button type="button" class="ad-dot" data-index="1" aria-label="Chill edice"></button>
+                <button type="button" class="ad-dot" data-index="2" aria-label="Groovy edice"></button>
+            </div>
         </div>
     </div>
 
     <!-- TESTIMONIALS -->
-    <section>
-        <h2 class="section-title">Co říkají pamětníci</h2>
-        <p class="section-subtitle">Příběhy ze života, které napsala sama hladová realita.</p>
+    <section id="pametnici" aria-labelledby="pametnici-title">
+        <h2 class="section-title" id="pametnici-title">Co říkají pamětníci</h2>
+        <p class="section-subtitle">Příběhy ze života, které napsala sama hladová realita. (Jména i osudy jsou vymyšlené.)</p>
 
         <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <p>„Předstíral jsem před přítelkyní, že jí nesu francouzské jednohubky. Byla to Perla na piškotu. Dnes jsme 10 let manželé.“</p>
-                <div class="testimonial-author">— Karel (34 let), Brno</div>
-            </div>
-            <div class="testimonial-card">
-                <p>„Vystudoval jsem kulinařinu v Paříži, ale když přijdu v 02:00 ráno z práce unavený, vyndám drak a Opavii. Nic se tomu nevyrovná.“</p>
-                <div class="testimonial-author">— Šéfkuchař Antonín</div>
-            </div>
-            <div class="testimonial-card">
-                <p>„Je to levný, je to rychlý a když to zapijete vlažným rozpustným kafem, je to prostě svátek.“</p>
-                <div class="testimonial-author">— Babička Květa</div>
-            </div>
+            <figure class="testimonial-card">
+                <blockquote>
+                    <p>„Předstíral jsem před přítelkyní, že jí nesu francouzské jednohubky. Byla to Perla na piškotu. Dnes jsme 10 let manželé.“</p>
+                </blockquote>
+                <figcaption class="testimonial-author">— Karel (34 let), Brno</figcaption>
+            </figure>
+            <figure class="testimonial-card">
+                <blockquote>
+                    <p>„Vystudoval jsem kulinařinu v Paříži, ale když přijdu v 02:00 ráno z práce unavený, vyndám drak a Opavii. Nic se tomu nevyrovná.“</p>
+                </blockquote>
+                <figcaption class="testimonial-author">— Šéfkuchař Antonín</figcaption>
+            </figure>
+            <figure class="testimonial-card">
+                <blockquote>
+                    <p>„Je to levný, je to rychlý a když to zapijete vlažným rozpustným kafem, je to prostě svátek.“</p>
+                </blockquote>
+                <figcaption class="testimonial-author">— Babička Květa</figcaption>
+            </figure>
         </div>
     </section>
 
@@ -186,40 +254,41 @@
 
         <div class="faq-list">
             <div class="faq-item">
-                <button type="button" class="faq-question">
+                <button type="button" class="faq-question" id="faq-q1" aria-controls="faq-a1">
                     Mohu použít poctivé máslo místo Perly?
-                    <span>➕</span>
+                    <span aria-hidden="true">➕</span>
                 </button>
-                <div class="faq-answer">
+                <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
                     Technicky ano, ale ztrácíte autentickou chuť 90. let a charakteristický lehce chladivý dojezd na patře. Perla je pro tento recept nenahraditelná.
                 </div>
             </div>
             <div class="faq-item">
-                <button type="button" class="faq-question">
+                <button type="button" class="faq-question" id="faq-q2" aria-controls="faq-a2">
                     Co když je Perla rozteklá při pokojové teplotě?
-                    <span>➕</span>
+                    <span aria-hidden="true">➕</span>
                 </button>
-                <div class="faq-answer">
+                <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2">
                     OKAMŽITĚ ZASTAVTE PŘÍPRAVU! Perla musí jít přímo z lednice. Rozteklý tuk způsobí promáčení piškotu a gastronomické neštěstí.
                 </div>
             </div>
             <div class="faq-item">
-                <button type="button" class="faq-question">
+                <button type="button" class="faq-question" id="faq-q3" aria-controls="faq-a3">
                     Mazat na rovnou, nebo vypouklou stranu piškotu?
-                    <span>➕</span>
+                    <span aria-hidden="true">➕</span>
                 </button>
-                <div class="faq-answer">
+                <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3">
                     Výhradně na rovnou (spodní) stranu! Vypouklá strana slouží jako ergonomická úchopová plocha pro palec a ukazováček.
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- FOOTER -->
     <footer>
         <div class="footer-content">
             <div>
-                <h3>🟡 piškotySperlou.cz</h3>
+                <h3><span aria-hidden="true">🟡</span> piškotySperlou.cz</h3>
                 <p class="footer-tagline">
                     Neoficiální fanklub a oslava české gastronomické improvizace. Vytvořeno s láskou, nadsázkou a drobečky na gauči.
                 </p>
@@ -228,13 +297,15 @@
                 <h4>Chcete recepty na další gastro-hříchy?</h4>
                 <p class="newsletter-intro">Odebírejte náš občasník "50 odstínů margarínu".</p>
                 <form class="newsletter-form">
-                    <input type="email" placeholder="Váš e-mail..." aria-label="E-mail" required>
+                    <input type="email" name="email" placeholder="Váš e-mail..." aria-label="E-mail" autocomplete="email" required>
                     <button type="submit" class="btn">Odebírat</button>
                 </form>
+                <p class="newsletter-status" id="newsletterStatus" role="status"></p>
             </div>
         </div>
         <div class="copyright">
-            &copy; 2026 piskotysperlou.cz — Všechna práva a drobky vyhrazeny.
+            <p>&copy; 2026 piskotysperlou.cz — Všechna práva a drobky vyhrazeny.</p>
+            <p class="disclaimer">Neoficiální fanouškovský web, nijak nespojený s výrobcem. Perla, Opavia a další názvy jsou ochranné známky svých majitelů. Newsletter je zatím jen vtip, e-mailové adresy nikam neukládáme.</p>
         </div>
     </footer>
 
