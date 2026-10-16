@@ -110,7 +110,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 document.querySelector(".newsletter-form")?.addEventListener("submit", (e) => {
     e.preventDefault();
     document.getElementById("newsletterStatus").textContent =
-        "Děkujeme! Jste oficiálně přihlášeni k odběru nostalgie (jen jako vtip, e-mail nikam neposíláme). Běžte si dát piškot!";
+        "Děkujeme! Nyní jste oficiálně přihlášeni k odběru nostalgie. Běžte si dát piškot!";
     e.target.reset();
 });
 
