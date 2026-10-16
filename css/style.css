@@ -850,11 +850,6 @@ footer {
     margin: 0 auto;
 }
 
-.copyright .disclaimer {
-    margin-top: 0.75rem;
-    font-size: 0.8rem;
-}
-
 /* RESPONSIVE */
 @media (max-width: 1024px) {
     .hero h1 {
