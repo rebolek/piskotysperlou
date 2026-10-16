@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="800" height="520">
+    <rect width="400" height="260" rx="16" fill="#fef9c3"/>
+    <ellipse cx="200" cy="208" rx="160" ry="30" fill="#ffffff" stroke="#fde68a" stroke-width="3"/>
+    <ellipse cx="200" cy="204" rx="130" ry="20" fill="#f8fafc"/>
+    <!-- soaked piškoty / Perla layers -->
+    <rect x="110" y="170" width="180" height="32" rx="6" fill="#92400e"/>
+    <rect x="110" y="154" width="180" height="16" fill="#fde047"/>
+    <rect x="110" y="124" width="180" height="30" fill="#92400e"/>
+    <rect x="110" y="108" width="180" height="16" fill="#fde047"/>
+    <!-- cocoa -->
+    <rect x="110" y="98" width="180" height="10" rx="5" fill="#4a2c17"/>
+    <g fill="#4a2c17">
+        <circle cx="130" cy="92" r="3"/><circle cx="152" cy="88" r="2.5"/>
+        <circle cx="176" cy="93" r="3"/><circle cx="200" cy="87" r="2.5"/>
+        <circle cx="224" cy="92" r="3"/><circle cx="248" cy="88" r="2.5"/>
+        <circle cx="270" cy="93" r="3"/>
+    </g>
+    <!-- fork -->
+    <g stroke="#94a3b8" stroke-width="4" stroke-linecap="round">
+        <line x1="332" y1="150" x2="332" y2="214"/>
+        <line x1="322" y1="150" x2="322" y2="176"/>
+        <line x1="342" y1="150" x2="342" y2="176"/>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="800" height="520">
+    <rect width="400" height="260" rx="16" fill="#fef9c3"/>
+    <circle cx="200" cy="135" r="112" fill="#ffffff" stroke="#e2e8f0" stroke-width="4"/>
+    <circle cx="200" cy="135" r="88" fill="none" stroke="#f1f5f9" stroke-width="3"/>
+    <!-- sauce -->
+    <path d="M185 78 Q250 62 292 108 Q316 152 274 186 Q220 208 184 178 Q160 134 185 78 Z" fill="#fb923c"/>
+    <g fill="#ea580c"><circle cx="228" cy="170" r="6"/><circle cx="262" cy="150" r="5"/><circle cx="246" cy="184" r="5"/></g>
+    <!-- piškot "knedlík" slices -->
+    <g fill="#fde68a" stroke="#d97706" stroke-width="3">
+        <ellipse cx="128" cy="140" rx="26" ry="38"/>
+        <ellipse cx="152" cy="140" rx="26" ry="38"/>
+        <ellipse cx="176" cy="140" rx="26" ry="38"/>
+    </g>
+    <!-- Perla "meat" slices -->
+    <g fill="#fde047" stroke="#f59e0b" stroke-width="3">
+        <rect x="204" y="106" width="56" height="26" rx="8" transform="rotate(-18 232 119)"/>
+        <rect x="212" y="124" width="56" height="26" rx="8" transform="rotate(-8 240 137)"/>
+    </g>
+    <!-- garnish -->
+    <circle cx="206" cy="82" r="14" fill="#fde047" stroke="#eab308" stroke-width="3"/>
+    <circle cx="206" cy="82" r="5" fill="#fef9c3"/>
+    <circle cx="176" cy="84" r="8" fill="#dc2626"/>
+</svg>

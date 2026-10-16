@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="800" height="520">
+    <rect width="400" height="260" rx="16" fill="#fef9c3"/>
+    <ellipse cx="200" cy="234" rx="110" ry="9" fill="#713f12" opacity=".15"/>
+    <!-- bottom piškot: flat side up -->
+    <path d="M110 196 H290 V206 Q290 226 200 226 Q110 226 110 206 Z" fill="#f59e0b"/>
+    <rect x="118" y="184" width="164" height="12" rx="6" fill="#fde047" stroke="#d97706" stroke-width="2"/>
+    <!-- middle piškot -->
+    <path d="M110 184 H290 V172 Q290 156 270 156 H130 Q110 156 110 172 Z" fill="#f59e0b"/>
+    <rect x="118" y="144" width="164" height="12" rx="6" fill="#fde047" stroke="#d97706" stroke-width="2"/>
+    <path d="M110 144 H290 V132 Q290 116 270 116 H130 Q110 116 110 132 Z" fill="#f59e0b"/>
+    <rect x="118" y="104" width="164" height="12" rx="6" fill="#fde047" stroke="#d97706" stroke-width="2"/>
+    <!-- top piškot: flat side down -->
+    <path d="M110 104 H290 Q290 54 200 54 Q110 54 110 104 Z" fill="#f59e0b"/>
+    <g fill="#fef3c7">
+        <ellipse cx="160" cy="80" rx="6" ry="3" transform="rotate(-20 160 80)"/>
+        <ellipse cx="200" cy="72" rx="6" ry="3"/>
+        <ellipse cx="240" cy="82" rx="6" ry="3" transform="rotate(25 240 82)"/>
+        <ellipse cx="180" cy="92" rx="6" ry="3" transform="rotate(10 180 92)"/>
+        <ellipse cx="225" cy="94" rx="6" ry="3" transform="rotate(-15 225 94)"/>
+    </g>
+    <!-- toothpick flag -->
+    <line x1="200" y1="56" x2="200" y2="24" stroke="#713f12" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="200,24 234,34 200,44" fill="#dc2626"/>
+</svg>

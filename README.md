@@ -11,3 +11,4 @@ Notes:
 - Canonical/OG/sitemap URLs assume `https://piskotysperlou.cz/`.
 - `img/og.jpg` (1200×630, blurred-fill of the Metal banner) is the social-preview image; regenerate it if the banner changes.
 - The newsletter form is intentionally a stub: it shows a "just a joke" message and stores nothing.
+- `recepty.html` is the recipes subpage; its illustrations are hand-drawn SVGs in `img/recepty/`.
